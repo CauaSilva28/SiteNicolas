@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Play:wght@400;700&display=swap'); /* fonte Archivo Black e Play*/
+
+/* variavel para cores */
+:root{
+    --fundo-menu-lateral: #101f78;
+    --fundo-claro:#F1FDFD;
+    --fundo-escuro:#000524;
+
+    --texto-escuro:#000;
+    --texto-claro:#fff;
+
+    --detalhes-claro:#203bd6;
+    --detalhes-escuro:#010937;
+}
+
+body{
+    font-family:"Play", sans-serif;
+    color: var(--texto-claro);
+    background: var(--fundo-escuro);
+}
+a{
+    color:var(--texto-claro);
+    text-decoration:none;
+}
+a:hover{
+    color: var(--detalhes-claro);
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: "Archivo Black", arial black;
+}
+
+/* cabeçalho */
+#header{
+    position:fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    width:300px;
+    background:var(--fundo-menu-lateral);
+    transition: all ease-in-out 0.5s;
+    padding:0 15px;
+    z-index: 99999;
+    overflow-y: auto; /* Cria uma barra de scroll dentro da header */
+}
+.perfil img{
+    margin:35px auto;
+    display:block;
+    width:120px;
+    border: ;
+    box-shadow: ;
+}
