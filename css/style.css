@@ -3,8 +3,8 @@
 /* variavel para cores */
 :root{
     --fundo-menu-lateral: #0058ca;
-    --fundo-claro:#F1FDFD;
-    --fundo-escuro:#010D26;
+    --fundo-claro:#03145f;
+    --fundo-escuro:#021133;
 
     --texto-escuro:#000;
     --texto-claro:#fff;
@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5, h6{
     transition:1s;
 }
 .perfil .social-links a:hover{
-    background: var(--fundo-claro);
+    background: var(--texto-claro);
     color:var(--texto-escuro);
     text-decoration:none;
 }
@@ -85,8 +85,8 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .container, .container-fluid{
-    padding-left:30px;
-    padding-right:30px;
+    padding-left:10px;
+    padding-right:10px;
 }
 
 @media (max-width: 1199px) {
@@ -180,7 +180,7 @@ h1, h2, h3, h4, h5, h6{
 }
 #hero::before{ /* pseudo elemento css */
     content:"";
-    background: rgba(5,13,26,0.4);
+    background: rgba(5,13,26,0.3);
     position: absolute;
     top:0;
     right: 0;
@@ -244,7 +244,7 @@ section{
     font-weight: bold;
     margin-bottom:20px;
     padding-bottom:20px;
-    color:var(--detalhes-claro)
+    color:var(--fundo-menu-lateral)
 }
 .section-title h2::after{ /* Adiciona uma linha em baixo do texto */
     content:"";
@@ -252,7 +252,7 @@ section{
     display:block;
     width: 70px;
     height: 3px;
-    background:var(--fundo-menu-lateral);
+    background:var(--detalhes-claro);
 }
 .section-title p{
     margin-bottom:0;
@@ -260,14 +260,15 @@ section{
 
 /* Sobre */
 .sobre .container h3{
-    font-size: 28px;
-    color: var(--fundo-menu-lateral);
+    font-size: 30px;
+    color: var(--detalhes-claro);
 }
 .sobre .container ul{
     list-style:none;
+    padding:0;
 }
 .sobre .container ul li{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     display:flex;
     align-items:center;
 }
@@ -279,4 +280,44 @@ section{
     margin-right:10px;
     color:var(--detalhes-claro);
     line-height: 0;
+}
+.sobre .row{
+    align-items:center;
+}
+.img-fluid{
+    width:350px;
+    border:1px solid var(--fundo-menu-lateral);
+}
+
+/* Conquistas */
+.conquistas{
+    padding-bottom:30px;
+}
+.conquistas .count-box{
+    padding:30px;
+    width:100%;
+}
+.conquistas .count-box i{
+    display:block;
+    font-size:45px;
+    color:var(--detalhes-claro);
+    float:left;
+    line-height:0;
+}
+.conquistas .count-box span{
+    font-size:45px;
+    line-height:40px;
+    display:block;
+    font-weight:700;
+    color:var(--fundo-menu-lateral);
+    margin-left:60px;
+}
+.conquistas .count-box p{
+    padding:20px 0 0 0;
+    margin:0 0 0 60px;
+    font-size:16px;
+}
+
+.bxicon{
+    margin-top:20px;
 }
