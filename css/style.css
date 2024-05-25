@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, h6{
 .perfil img{
     margin:25px auto;
     display:block;
-    width:150px;
+    width:140px;
     border:none;
     box-shadow: 1px 1px 12px 8px var(--detalhes-claro);
 }
@@ -78,6 +78,30 @@ h1, h2, h3, h4, h5, h6{
     text-decoration:none;
 }
 
+/* Principal */
+
+#main{
+    margin-left:300px;
+}
+
+.container, .container-fluid{
+    padding-left:30px;
+    padding-right:30px;
+}
+
+@media (max-width: 1199px) {
+    #header{
+        left:-300px;
+    }
+    #main{
+        margin-left:0;
+    }
+    .container, .container-fluid{
+        padding-left:12px;
+        padding-right:12px;
+    }
+}
+
 /* menu nav Desktop */
 .nav-menu{
     padding:25px 0 0 0;
@@ -99,6 +123,7 @@ h1, h2, h3, h4, h5, h6{
     margin-bottom:8px;
     transition:0.5s;
     font-size:15px;
+    font-weight:600;
 }
 .nav-menu a i, .nav-menu a:focus i{
     font-size:20px;
@@ -128,7 +153,6 @@ h1, h2, h3, h4, h5, h6{
     border:0;
     font-size:25px;
     transition:all 0.5s;
-    outline:none !important; /* outline em CSS é usada para desenhar uma linha ao redor de um elemento, fora da borda, para destacá-lo sem afetar o layout */
     background:var(--fundo-claro);
     color:var(--fundo-menu-lateral);
     width:40px;
@@ -143,7 +167,7 @@ h1, h2, h3, h4, h5, h6{
 .mobile-nav-active{
     overflow: hidden;
 }
-.mobile-nav-active, #header{
+.mobile-nav-active #header{
     left: 0;
 }
 /* HERO */
@@ -187,4 +211,16 @@ h1, h2, h3, h4, h5, h6{
     padding-bottom:4px;
     letter-spacing: 1px;
     border-bottom:3px solid var(--detalhes-escuro);
+}
+
+@media(min-width:1024px){
+    #hero{
+        background-attachment: fixed;
+    }
+}
+@media(max-width:768px){
+    #hero h1{
+        font-size:30px;
+        line-height:36px;
+    }
 }
