@@ -229,3 +229,54 @@ h1, h2, h3, h4, h5, h6{
         font-size:35px;
     }
 }
+/* CSS Geral */
+section{
+    padding:60px 0;
+}
+.section-bg{
+    background: var(--fundo-claro);
+}
+.section-title{
+    padding-bottom:30px;
+}
+.section-title h2{
+    font-size:40px;
+    font-weight: bold;
+    margin-bottom:20px;
+    padding-bottom:20px;
+    color:var(--detalhes-claro)
+}
+.section-title h2::after{ /* Adiciona uma linha em baixo do texto */
+    content:"";
+    position:absolute;
+    display:block;
+    width: 70px;
+    height: 3px;
+    background:var(--fundo-menu-lateral);
+}
+.section-title p{
+    margin-bottom:0;
+}
+
+/* Sobre */
+.sobre .container h3{
+    font-size: 28px;
+    color: var(--fundo-menu-lateral);
+}
+.sobre .container ul{
+    list-style:none;
+}
+.sobre .container ul li{
+    margin-bottom: 20px;
+    display:flex;
+    align-items:center;
+}
+.sobre .container ul strong{
+    margin-right:10px;
+}
+.sobre .container ul i{
+    font-size:22px;
+    margin-right:10px;
+    color:var(--detalhes-claro);
+    line-height: 0;
+}
