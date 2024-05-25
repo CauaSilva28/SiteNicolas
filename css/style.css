@@ -205,6 +205,8 @@ h1, h2, h3, h4, h5, h6{
     margin-bottom:50px;
     font-size:26px;
     font-weight:600;
+    background: rgba(255,255,255,0.2);
+    padding:4px;
 }
 #hero p span{
     color:var(--detalhes-escuro);
@@ -220,7 +222,10 @@ h1, h2, h3, h4, h5, h6{
 }
 @media(max-width:768px){
     #hero h1{
-        font-size:30px;
+        font-size:60px;
         line-height:36px;
+    }
+    #hero p{
+        font-size:35px;
     }
 }
