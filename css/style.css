@@ -351,3 +351,49 @@ section{
     transition:2s;
     background: var(--fundo-menu-lateral);
 }
+
+/* Resumo */
+.resumo .resumo-titulo{
+    font-size:26px;
+    font-weight: 700;
+    font-family: "Righteous";
+    margin-top:30px;
+    margin-bottom:30px;
+    color:var(--detalhes-claro);
+}
+.resumo .resumo-item{
+    padding:0 0 20px 20px;
+    border-left:2px solid var(--fundo-menu-lateral);
+    position:relative;
+}
+.resumo .resumo-item h4{
+    line-height: 22px;
+    font-size: 22px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.resumo .resumo-item h5{
+    font-size: 16px;
+    background: var(--detalhes-escuro);
+    padding: 5px 15px;
+    display: inline-block;
+    margin-bottom: 25px;
+}
+.resumo .resumo-item ul{
+    padding-left:20px;
+}
+.resumo .resumo-item ul li{
+    padding-bottom:10px;
+}
+.resumo .resumo-item::before{ /* :: = Pseudo elemento (não exite mas será criado através dos before) */
+    content: "";
+    position:absolute;
+    top: 0;
+    left: -9px;
+    width: 16px;
+    height: 16px;
+    border-radius:50%;
+    background: var(--texto-claro);
+    border: 2px solid var(--fundo-menu-lateral);
+}
