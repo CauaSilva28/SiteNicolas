@@ -321,3 +321,33 @@ section{
 .bxicon{
     margin-top:20px;
 }
+
+/* Skills / vendas */
+.skills .progress{
+    height: 60px;
+    display: block;
+    background: none;
+    border-radius: 0;
+}
+.skills .progress .skill{
+    padding: 0;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    color: var(--detalhes-claro);
+}
+.skills .progress .skill .val{
+    float:right;
+    font-style:normal;
+}
+.skills .progress-bar-bg{
+    background: var(--texto-claro);
+    height: 10px;
+}
+.skills .progress-bar{
+    width:1px;
+    height:10px;
+    transition:2s;
+    background: var(--fundo-menu-lateral);
+}
