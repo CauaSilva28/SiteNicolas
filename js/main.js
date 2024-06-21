@@ -1,7 +1,7 @@
+
 /**
 * Template Name: iPortfolio
 * Updated: Jul 27 2023 with Bootstrap v5.3.1
-* License: https://bootstrapmade.com/license/
 */
 (function() {
   "use strict";
@@ -175,10 +175,10 @@ selectEl.addEventListener(type, listener): Se all for falso, adiciona o ouvinte 
   /**
    * Animação de habilidades
    */
-  let skilsContent = select('.skills-content');
-  if (skilsContent) {
+  let skillsContent = select('.skills-content');
+  if (skillsContent) {
     new Waypoint({
-      element: skilsContent,
+      element: skillsContent,
       offset: '80%',
       handler: function(direction) {
         let progress = select('.progress .progress-bar', true);
@@ -249,7 +249,7 @@ selectEl.addEventListener(type, listener): Se all for falso, adiciona o ouvinte 
   /**
    * Controle deslizante de depoimentos
    */
-  new Swiper('.testimonials-slider', {
+  new Swiper('.depoimentos-slider', {
     speed: 600,
     loop: true,
     autoplay: {
