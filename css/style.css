@@ -489,6 +489,10 @@ section{
     bottom: 0;
 }
 
+.img-fluid{
+    width:100%;
+}
+
 /* portfolio pagina adicional == detalhes */
 
 
@@ -532,4 +536,15 @@ section{
     margin-left: 60px;
     line-height: 20px;
     font-size: 18px;
+}
+
+/* Depoimentos */
+.depoimento-item h4{
+    font-family:"Play";
+    font-size: 18px;
+}
+
+.depoimento-img{
+    width:400px;
+    height:400px;
 }
