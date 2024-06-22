@@ -537,6 +537,10 @@ section{
     line-height: 20px;
     font-size: 18px;
 }
+/* Contato */
+.info h4{
+    color:var(--detalhes-claro);
+}
 
 /* Depoimentos */
 .depoimento-item h4{
