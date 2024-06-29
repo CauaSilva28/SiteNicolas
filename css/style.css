@@ -252,6 +252,7 @@ section{
     display:block;
     width: 70px;
     height: 3px;
+    margin-top:5px;
     background:var(--detalhes-claro);
 }
 .section-title p{
@@ -692,4 +693,39 @@ section{
 .back-to-top.active{
     visibility:visible;
     opacity:1;
+}
+
+/* Footer */
+#footer{
+    padding: 30px;
+    background: var(--detalhes-escuro);
+    font-size: 16px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    z-index: 999999;
+}
+#footer .copyright{
+    text-align:center;
+}
+#footer .creditos{
+    padding-top:5px;
+    text-align:center;
+    font-size:15px;
+    color:var(--detalhes-claro);
+}
+#footer .creditos a{
+    color:var(--detalhes-claro);
+}
+#footer .creditos a:hover{
+    color:var(--fundo-menu-lateral);
+}
+
+@media(max-width: 1199px){
+    #footer{
+        position: static;
+        width:auto;
+        padding-right:20px 15px;
+    }
 }
