@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Play:wght@400;700&family=Righteous&display=swap'); /* fonte Archivo Black, Play e Righteous*/
 
+/* Alterar barras de rolagem */
+::-webkit-scrollbar{
+    background-color: #000;
+    width:10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #0058ca;
+    border-radius:1rem;
+}
+
 /* variavel para cores */
 :root{
     --fundo-menu-lateral: #0058ca;
@@ -133,7 +143,7 @@ h1, h2, h3, h4, h5, h6{
 }
 .nav-menu a:hover, 
 .nav-menu .active, 
-.nav-menu .active:focus, /* focus deixa deixa o objeto */
+.nav-menu .active:focus, /* focus deixa o objeto */
 .nav-menu li:hover>a{
     text-decoration: none;
     color:var(--texto-claro);
@@ -285,10 +295,6 @@ section{
 .sobre .row{
     align-items:center;
 }
-.img-fluid{
-    width:350px;
-    border:1px solid var(--fundo-menu-lateral);
-}
 
 /* Conquistas */
 .conquistas{
@@ -400,6 +406,11 @@ section{
 }
 
 /* portfolio // vendas // Catalogo */
+.img-fluid{
+    width:100%;
+    border:1px solid var(--fundo-menu-lateral);
+}
+
 .portfolio .portfolio-item {
     margin-bottom: 30px;
 }
@@ -488,10 +499,6 @@ section{
 .portfolio .portfolio-wrap:hover .portfolio-links {
     opacity: 1;
     bottom: 0;
-}
-
-.img-fluid{
-    width:100%;
 }
 
 /* portfolio pagina adicional == detalhes */
@@ -697,9 +704,9 @@ section{
 
 /* Footer */
 #footer{
-    padding: 30px;
+    padding: 15px;
     background: var(--detalhes-escuro);
-    font-size: 16px;
+    font-size: 12px;
     position: fixed;
     left: 0;
     bottom: 0;
@@ -712,7 +719,7 @@ section{
 #footer .creditos{
     padding-top:5px;
     text-align:center;
-    font-size:15px;
+    font-size:11px;
     color:var(--detalhes-claro);
 }
 #footer .creditos a{
