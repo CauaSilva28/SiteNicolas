@@ -780,3 +780,29 @@ section{
         display:inline-block;
     }
 }
+
+
+.detalhes-slider .swiper-pagination{
+    margin-top:30px;
+    position: relative;
+}
+.detalhes-slider .swiper-pagination .swiper-pagination-bullet{
+    width:12px;
+    height:12px;
+    background: var(--detalhes-claro);
+}
+
+.portfolio-info{
+    background-color:#031a4d;
+    box-shadow:1px 1px 4px 5px #000b25;
+    margin-bottom:20px;
+    padding:20px 20px 10px 20px;
+}
+.portfolio-info ul li{
+    list-style: none;
+    margin-left:-30px;
+}
+
+.portfolio-info ul li strong{
+    color:var(--detalhes-claro);
+}
