@@ -115,7 +115,14 @@ h1, h2, h3, h4, h5, h6{
 /* menu nav Desktop */
 .nav-menu{
     padding:25px 0 0 0;
+    margin-bottom:80px;
 }
+@media (max-width: 1199px) {
+    .nav-menu{
+        margin-bottom:0px;
+    }
+}
+
 .nav-menu *{
     margin: 0;
     top: 0;
